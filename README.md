@@ -88,13 +88,13 @@ This tool is essential for WordPress developers, theme creators, and plugin main
 ## Screenshots
 
 1. **Exclude List Management**  
-   ![Exclude List Management] (assets/images/screenshot-1.png)
-   
-3. **Plugin and Theme Selection**  
-   ![Plugin and Theme Selection](https://via.placeholder.com/800x400?text=Plugin+and+Theme+Selection)
+   ![Exclude List Management](assets/images/screenshot-1.png)
 
-4. **Generated Folder Structure**  
-   ![Generated Folder Structure](https://via.placeholder.com/800x400?text=Generated+Folder+Structure)
+2. **Plugin and Theme Selection**  
+   ![Plugin and Theme Selection](assets/images/screenshot-2.png)
+
+3. **Generated Folder Structure**  
+   ![Generated Folder Structure](assets/images/screenshot-3.png)
 
 ---
 
