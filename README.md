@@ -88,12 +88,12 @@ This tool is essential for WordPress developers, theme creators, and plugin main
 ## Screenshots
 
 1. **Exclude List Management**  
-   ![Exclude List Management](https://via.placeholder.com/800x400?text=Exclude+List+Management)
-
-2. **Plugin and Theme Selection**  
+   ![Exclude List Management] (https://github.com/user-attachments/assets/1fb5329d-6767-4261-9ec4-28168daea67e)
+   
+3. **Plugin and Theme Selection**  
    ![Plugin and Theme Selection](https://via.placeholder.com/800x400?text=Plugin+and+Theme+Selection)
 
-3. **Generated Folder Structure**  
+4. **Generated Folder Structure**  
    ![Generated Folder Structure](https://via.placeholder.com/800x400?text=Generated+Folder+Structure)
 
 ---
