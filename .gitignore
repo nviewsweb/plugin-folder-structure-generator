@@ -1,3 +1,5 @@
-# Ignore the structure folder
-/structure/
+# Ignore all files inside the /structure/ folder
+/structure/*
 
+# Exclude the folder itself from being ignored
+!/structure/
