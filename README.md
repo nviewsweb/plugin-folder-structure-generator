@@ -121,16 +121,3 @@ This plugin is licensed under the [GPL-2.0-or-later](https://www.gnu.org/license
 
 This plugin is publicly hosted on GitHub:  
 [Plugin Folder Structure Generator](https://github.com/nviewsweb/plugin-folder-structure-generator)
-
----
-
-### Explanation
-
-1. **Acknowledgment as Lead Contributor**:
-   - Prabakaran Shankar is explicitly acknowledged as the **Lead Contributor** in both the **Contributors** section and the **Description**.
-
-2. **Author as nViews WEB**:
-   - Since nViews WEB is the organization hosting the plugin, the **Author** is credited accordingly, with a clear link to its GitHub profile.
-
-3. **Contributors Section**:
-   - All contributors, including Prabakaran Shankar, are listed under the **Contributors** section.
