@@ -141,7 +141,7 @@ class Plugin_Folder_Generator_Settings {
         $theme_folders = array_filter(glob($theme_dir . '/*'), 'is_dir');
 
         echo '<h2>' . __('Available Themes', 'plugin-folder-structure') . '</h2>';
-        echo '<style>.form-table .button-secondary { vertical-align: inherit !important; }</style>';
+        echo '<style>.form-table .button-secondary { vertical-align: baseline !important; } .form-table td { padding: 5px 5px; margin: 5px 5px 0 0; }</style>';
         echo '<table class="form-table"><thead><tr>';
         echo '<th>' . __('Theme Name', 'plugin-folder-structure') . '</th>';
         echo '<th>' . __('Actions', 'plugin-folder-structure') . '</th>';
@@ -157,32 +157,33 @@ class Plugin_Folder_Generator_Settings {
     private static function render_folder_row($folder, $type) {
         $folder_name = basename($folder);
         $structure_file = plugin_dir_path(__FILE__) . "../structure/{$folder_name}-{$type}-structure.txt";
+        $structure_url = plugin_dir_url(__FILE__) . "../structure/{$folder_name}-{$type}-structure.txt";
     
         echo '<tr>';
         echo '<td>' . esc_html($folder_name) . '</td>';
         echo '<td>';
-        echo '<form method="POST" style="display: inline-block; margin-right: 5px;" target="_blank">';
+    
+        // Generate/Regenerate Button
+        echo '<form method="POST" style="display: inline-block; margin: 5px 5px 0 0;">';
         echo '<input type="hidden" name="generate" value="' . esc_attr($folder) . '">';
         echo '<input type="hidden" name="type" value="' . esc_attr($type) . '">';
         echo '<button type="submit" class="button-primary">' . (file_exists($structure_file) ? __('Regenerate', 'plugin-folder-structure') : __('Generate', 'plugin-folder-structure')) . '</button>';
         echo '</form>';
+    
         if (file_exists($structure_file)) {
-            // View Button
-            echo '<form method="POST" action="' . esc_url(admin_url('admin-post.php')) . '" style="display: inline-block; margin-right: 5px;" target="_blank">';
-            echo '<input type="hidden" name="action" value="view_file">';
-            echo '<input type="hidden" name="file_path" value="' . esc_attr($structure_file) . '">';
-            echo '<button type="submit" class="button-secondary">' . __('View', 'plugin-folder-structure') . '</button>';
-            echo '</form>';
+            // View Button with Public Link
+            echo '<a href="' . esc_url($structure_url) . '" target="_blank" class="button-secondary" style="margin: 5px 5px 0 0;">' . __('View', 'plugin-folder-structure') . '</a>';
     
             // Download Button
-            echo '<form method="POST" action="' . esc_url(admin_url('admin-post.php')) . '" style="display: inline-block;" target="_blank">';
+            echo '<form method="POST" action="' . esc_url(admin_url('admin-post.php')) . '" style="display: inline-block;margin:5px 5px 0 0;" target="_blank">';
             echo '<input type="hidden" name="action" value="download_file">';
             echo '<input type="hidden" name="file_path" value="' . esc_attr($structure_file) . '">';
             echo '<button type="submit" class="button-secondary">' . __('Download', 'plugin-folder-structure') . '</button>';
             echo '</form>';
         }
+    
         echo '</td>';
         echo '</tr>';
-    }
+    }   
     
 }
