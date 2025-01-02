@@ -22,13 +22,6 @@ add_action('admin_menu', function () {
     Plugin_Folder_Generator_Settings::add_settings_page();
 });
 
-add_action('admin_post_view_file', function () {
-    if (isset($_POST['file_path'])) {
-        $file_path = sanitize_text_field($_POST['file_path']);
-        Plugin_Folder_Generator::serve_file_for_browser($file_path);
-    }
-});
-
 add_action('admin_post_download_file', function () {
     if (isset($_POST['file_path'])) {
         $file_path = sanitize_text_field($_POST['file_path']);
