@@ -2,3 +2,5 @@
 !/structure/
 # Ignore all files inside the /structure/ folder
 /structure/*
+# Allow .gitkeep specifically
+!/structure/.gitkeep
