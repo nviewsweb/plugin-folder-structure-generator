@@ -88,7 +88,7 @@ This tool is essential for WordPress developers, theme creators, and plugin main
 ## Screenshots
 
 1. **Exclude List Management**  
-   ![Exclude List Management] (https://github.com/user-attachments/assets/1fb5329d-6767-4261-9ec4-28168daea67e)
+   ![Exclude List Management] (assets/images/screenshot-1.png)
    
 3. **Plugin and Theme Selection**  
    ![Plugin and Theme Selection](https://via.placeholder.com/800x400?text=Plugin+and+Theme+Selection)
