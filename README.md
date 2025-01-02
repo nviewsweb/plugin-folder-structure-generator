@@ -88,12 +88,12 @@ This tool is essential for WordPress developers, theme creators, and plugin main
 ## Screenshots
 
 1. **Exclude List Management**  
-   ![Exclude List Management](https://via.placeholder.com/800x400?text=Exclude+List+Management)
-
-2. **Plugin and Theme Selection**  
+   ![Exclude List Management] (https://private-user-images.githubusercontent.com/62056531/399599678-1fb5329d-6767-4261-9ec4-28168daea67e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzU3ODU3OTIsIm5iZiI6MTczNTc4NTQ5MiwicGF0aCI6Ii82MjA1NjUzMS8zOTk1OTk2NzgtMWZiNTMyOWQtNjc2Ny00MjYxLTllYzQtMjgxNjhkYWVhNjdlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTAyVDAyMzgxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk0ZTcxNzJkMzY3OGNjMzVhY2U1ZjYwYzcxNTQ3ZWQ5ODRjMzExM2JjNjMzZmYyNTMxZThiNzFiNTJhYmJiZTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.SmFGNCGOaLyYNbqcIBkALV4HmTPcNlc7q5yYdvQ7DEk)
+   
+3. **Plugin and Theme Selection**  
    ![Plugin and Theme Selection](https://via.placeholder.com/800x400?text=Plugin+and+Theme+Selection)
 
-3. **Generated Folder Structure**  
+4. **Generated Folder Structure**  
    ![Generated Folder Structure](https://via.placeholder.com/800x400?text=Generated+Folder+Structure)
 
 ---
