@@ -31,7 +31,12 @@ class Plugin_Folder_Generator {
      * Recursively generate the folder structure of a directory.
      */
     private static function get_folder_structure($dir, $prefix = '', $exclude = []) {
-        $output = mb_convert_encoding(basename($dir), 'UTF-8', 'auto') . "\n";
+        // Initialize output only for the root directory
+        if ($prefix === '') {
+            $output = mb_convert_encoding(basename($dir), 'UTF-8', 'auto') . "\n";
+        } else {
+            $output = '';
+        }
         $files = scandir($dir);
     
         foreach ($files as $file) {
