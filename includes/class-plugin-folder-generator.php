@@ -31,7 +31,7 @@ class Plugin_Folder_Generator {
      * Recursively generate the folder structure of a directory.
      */
     private static function get_folder_structure($dir, $prefix = '', $exclude = []) {
-        $output = '';
+        $output = mb_convert_encoding(basename($dir), 'UTF-8', 'auto') . "\n";
         $files = scandir($dir);
     
         foreach ($files as $file) {
@@ -42,13 +42,13 @@ class Plugin_Folder_Generator {
             // Check if the current item is a directory or a file
             if (is_dir($dir . '/' . $file)) {
                 // Append with directory indicator `│--`
-                $output .= $prefix . mb_convert_encoding('│-- ', 'UTF-8', 'auto') . mb_convert_encoding($file, 'UTF-8', 'auto') . "\n";
+                $output .= $prefix . mb_convert_encoding('¦-- ', 'UTF-8', 'auto') . mb_convert_encoding($file, 'UTF-8', 'auto') . "\n";
     
                 // Recursively process subdirectories with an updated prefix
-                $output .= self::get_folder_structure($dir . '/' . $file, $prefix . mb_convert_encoding('│   ', 'UTF-8', 'auto'), $exclude);
+                $output .= self::get_folder_structure($dir . '/' . $file, $prefix . mb_convert_encoding('¦   ', 'UTF-8', 'auto'), $exclude);
             } else {
                 // Append with file indicator `│---`
-                $output .= $prefix . mb_convert_encoding('│--- ', 'UTF-8', 'auto') . mb_convert_encoding($file, 'UTF-8', 'auto') . "\n";
+                $output .= $prefix . mb_convert_encoding('¦--- ', 'UTF-8', 'auto') . mb_convert_encoding($file, 'UTF-8', 'auto') . "\n";
             }
         }
     
